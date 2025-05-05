@@ -64,7 +64,6 @@ ol {
 
 .result {
   grid-area: result;
-  position: relative;
 }
 
 .result__video {
@@ -72,6 +71,10 @@ ol {
   height: 386px;
   object-fit: cover;
   object-position: center;
+}
+
+.result__video-container {
+  position: relative;
 }
 
 .search-form {
@@ -85,6 +88,7 @@ ol {
   display: flex;
   gap: 8px;
 }
+
 .search-form__label:has(:focus-visible) {
   outline: solid 1px #fff;
 }
@@ -128,10 +132,6 @@ ol {
   border-style: solid;
   border-color: #ffffff;
   appearance: none;
-}
-
-.search-form__textfield:focus-visible {
-  outline: solid 1px #fff;
 }
 
 .search-form__textfield:active {
